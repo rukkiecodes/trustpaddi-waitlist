@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vuetify from 'vite-plugin-vuetify'
-import dotenv from 'vite-plugin-dotenv'
 
 const path = require('path')
 
@@ -13,7 +12,6 @@ export default defineConfig({
     vuetify({
       autoImport: true,
     }),
-    dotenv()
   ],
   define: { 'process.env': {} },
   resolve: {
