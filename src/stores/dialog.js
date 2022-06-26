@@ -18,8 +18,8 @@ export const useDialogStore = defineStore({
     },
 
     sendNewWait () {
-      this.loading = true
-      if (this.email != '')
+      if (this.email != '') {
+        this.loading = true
         axios({
           method: 'post',
           url: `https://trustpaddi-waitlist.herokuapp.com/waitlist/addWait/${this.email}`
@@ -40,6 +40,7 @@ export const useDialogStore = defineStore({
           this.snackbar = true
           this.text = 'You are already on our waitlist'
         })
+      }
     }
   }
 })

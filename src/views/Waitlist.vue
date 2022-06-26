@@ -8,7 +8,6 @@ import Snackbar from "../components/Snackbar.vue"
 
 <template>
   <v-container>
-    <Snackbar />
     <v-row justify="space-between" align="center" class="mt-5">
       <v-col cols="12" sm="6">
         <Hero />
@@ -20,5 +19,6 @@ import Snackbar from "../components/Snackbar.vue"
 
     <Footer />
     <Dialog />
+    <Snackbar />
   </v-container>
 </template>
